@@ -2,55 +2,60 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <div className="main">
-      <div className="content">
-        <p className="heading">themongerer</p>
+    <>
+      <div className="main">
+        <div className="content">
+          <a href="/">
+            <p className="logotxt">themongerer</p>
+          </a>
 
-        <a href="/create" className="link">
-          create
-        </a>
+          <a href="/create" className="link">
+            create
+          </a>
 
-        <a href="/create" className="link">
-          search
-        </a>
+          <a href="/create" className="link">
+            communities
+          </a>
 
-        <a href="/create" className="link">
-          near you
-        </a>
+          <a href="/create" className="link">
+            trending
+          </a>
 
-        <a href="/create" className="link">
-          communities
-        </a>
+          <a href="/create" className="link">
+            search
+          </a>
+        </div>
       </div>
-
       <style jsx>
         {`
           .main {
-            position: fixed;
+            margin-top: 0px;
           }
 
           .content {
             margin-top: 0px;
             display: flex;
+            align-items: center;
+            flex-direction: row;
+            // border-bottom : 1px solid grey;
+            height: 70px;
           }
 
-          .heading {
+          .logotxt {
             margin-top: 0px;
-            margin-right: 80px;
-            font-size: 2em;
+            margin-right: 20px;
             font-weight: 400;
-            padding-top: 5px;
-            padding-left: 40px;
-            color: black;
+            font-size: 1.9em;
+            padding-left: 20px;
+            padding-top: 10px;
           }
 
           .link {
-            margin-top: 14px;
-            margin-left: 70px;
-            font-size: 1.3em;
-            font-weight: 200;
-            transition: all 200ms ease;
+            margin-top: -15px;
+            margin-left: 80px;
+            font-size: 1.2em;
             color: grey;
+            transition: all 500ms ease;
           }
 
           .link:hover {
@@ -58,6 +63,6 @@ export default function Navbar() {
           }
         `}
       </style>
-    </div>
+    </>
   );
 }
