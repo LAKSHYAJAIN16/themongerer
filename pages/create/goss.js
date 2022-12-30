@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import axios from "axios";
 
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 
 export default function create() {
   const [ui, setUi] = useState(0);
@@ -139,21 +139,22 @@ export default function create() {
         }
 
         .a-head {
-          text-align : center;
-          font-weight : 200;
-          font-size : 3em;
-          margin-top : -10px;
+            text-align : center;
+            font-weight : 500;
+            font-size : 5em;
+            margin-top : 0px;
+            margin-bottom : 0px;
         }
 
         .a-desc {
           text-align : center;
-          margin-top : -20px;
+          margin-top : -5px;
         }
 
         .a-textarea {
           resize : none;
           width : 70%;
-          height : 150px;
+          height : 200px;
           display: block;
           margin-left: auto;
           margin-right: auto;

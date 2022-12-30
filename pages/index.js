@@ -16,6 +16,9 @@ export default function Home() {
 
       //Set cookie
       Cookies.set("harvey", JSON.stringify(res.data));
+
+      //Also, redirect to the home
+      window.location.replace("/home");
     };
 
     run();

@@ -13,7 +13,7 @@ export default function Navbar() {
             create
           </a>
 
-          <a href="/create" className="link">
+          <a href="/communities" className="link">
             communities
           </a>
 
